@@ -18,6 +18,23 @@ This repository contains the completed Fyle Frontend Challenge. The goal of the 
 
 3. **Skeleton Loader:**
    - A skeleton loader is displayed during API calls to enhance the user experience and provide visual feedback on data loading.
+   - 
+## Hosted Version
+
+Access the hosted version of the application [here](https://github-challenge-parag-unhale.netlify.app/).
+
+## Technologies Used
+
+- Angular Framework
+- Server-side Pagination Module
+- Skeleton Loader for Angular
+
+## How to Run
+
+1. Clone this repository to your local machine.
+2. Install the required dependencies by running `npm install`.
+3. Run the development server using `ng serve`.
+4. Navigate to http://localhost:4200/ to view the application.
 
 ## Unit Tests
 
@@ -53,18 +70,6 @@ This repository contains the completed Fyle Frontend Challenge. The goal of the 
 - `should create the component`
 - `should update page number on pageChanged`
 
-## Technologies Used
-
-- Angular Framework
-- Server-side Pagination Module
-- Skeleton Loader for Angular
-
-## How to Run
-
-1. Clone this repository to your local machine.
-2. Install the required dependencies by running `npm install`.
-3. Run the development server using `ng serve`.
-4. Navigate to http://localhost:4200/ to view the application.
 
 ## Testing
 
