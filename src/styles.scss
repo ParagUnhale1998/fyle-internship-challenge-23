@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+:host {
+    display: block;
+    padding: 1rem;
+  }
+   
+  body{
+    width: 100%;
+    height: 100%;
+    background: #1F2937;
+  }
+  .mb-4 {
+    margin-bottom: 1rem;
+  }
+  
+  .text-gray-700 {
+    color: #4a5568;
+  }
+  
+  .font-bold {
+    font-weight: 700;
+  }

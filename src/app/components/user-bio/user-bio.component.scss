@@ -1,0 +1,61 @@
+
+.loading-skeleton {
+    animation: loadingAnimation 1.5s infinite;
+  }
+  
+  .avatar-skeleton {
+    width: 250px;
+    height: 250px;
+    background-color: #333;
+    border-radius: 50%;
+  }
+  
+  .name-skeleton {
+    width: 150px;
+    height: 24px;
+    background-color: #333;
+    border-radius: 4px;
+  }
+  
+  .username-skeleton {
+    width: 120px;
+    height: 16px;
+    background-color: #333;
+    border-radius: 4px;
+  }
+  
+  .bio-skeleton {
+    width: 200px;
+    height: 16px;
+    background-color: #333;
+    border-radius: 4px;
+  }
+  
+  .location-skeleton {
+    width: 100px;
+    height: 16px;
+    background-color: #333;
+    border-radius: 4px;
+  }
+  
+  .twitter-link-skeleton,
+  .portfolio-link-skeleton {
+    width: 120px;
+    height: 16px;
+    background-color: #333;
+    border-radius: 4px;
+  }
+  .inline {
+    display: inline;
+}
+  @keyframes loadingAnimation {
+    0% {
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0.7;
+    }
+  }

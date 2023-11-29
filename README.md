@@ -1,43 +1,78 @@
-# Fyle Frontend Challenge
+# Fyle Frontend Challenge - Completed by Parag Unhale
 
-## Who is this for?
+## Overview
 
-This challenge is meant for candidates who wish to intern at Fyle and work with our engineering team. The candidate should be able to commit to at least 6 months of dedicated time for internship.
+This repository contains the completed Fyle Frontend Challenge. The goal of the challenge was to implement an application using the GitHub API, with a focus on handling topics, server-side pagination, and incorporating a skeleton loader during API calls. The assignment also required the inclusion of unit tests for one component and one service, achieving 100% code coverage.
 
-## Why work at Fyle?
+## Key Features
 
-Fyle is a fast-growing Expense Management SaaS product. We are ~40 strong engineering team at the moment. 
+1. **Topics Representation:**
+   - The provided image illustrates the representation of topics for a particular repository. Each repository can have multiple topics.
 
-We are an extremely transparent organization. Check out our [careers page](https://careers.fylehq.com) that will give you a glimpse of what it is like to work at Fyle. Also, check out our Glassdoor reviews [here](https://www.glassdoor.co.in/Reviews/Fyle-Reviews-E1723235.htm). You can read stories from our teammates [here](https://stories.fylehq.com).
+   ![Topics Representation](./assets/Thumbnail.png)
 
-## Challenge outline
+2. **Server-side Pagination:**
+   - Pagination is implemented on the server side.
+   - By default, 10 repositories are displayed per page.
+   - Users have the flexibility to choose a maximum of 100 repositories per page.
 
-This challenge involves implementing application using github api. 
+3. **Skeleton Loader:**
+   - A skeleton loader is displayed during API calls to enhance the user experience and provide visual feedback on data loading.
 
-The services that you need to use are already implemented - check out ApiService.
+## Unit Tests
 
-You can see details of this challenge [here](https://fyleuniverse.notion.site/fyleuniverse/Fyle-Frontend-development-challenge-cb5085e5e0864e769e7b98c694400aaa)
+### DataService
 
-__Note__ - This challenge is in angular. We work on angular frameworks & after you join we expect the same from you. Hence it is required to complete this assignement in angular itself.
+- `should handle error when fetching user data`
+- `should reset state`
+- `should set username and fetch user data`
+- `should fetch user data successfully`
+- `should be created`
 
-## What happens next?
+### ApiService
 
-You will hear back within 48 hours from us via email.
+- `should be created`
+- `should get user repos`
+- `should get user data`
 
-## Installation
+### NavbarComponent
 
-1. Fork this repository to your github account.
-2. Clone the forked repository and proceed with steps mentioned below.
+- `should unsubscribe onDestroy`
+- `should create the component`
+- `should set username and update user data on successful fetch`
+- `should initialize with default values`
+- `should call onSearch method on ngOnInit`
 
-### Install requirements
-* Install angular cli [Ref](https://angular.io/cli)
-* `npm install` in this repository 
+### UserBioComponent
 
-## Development server
+- `should Check user data when available`
+- `should create`
 
-Run `ng serve` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+### UserReposComponent
 
-## Further help
+- `should create the component`
+- `should update page number on pageChanged`
 
-Visit the [Angular Documentation](https://angular.io/guide/styleguide) to learn more.
-Styling is to be strictly done with [Tailwind](https://tailwindcss.com/docs/installation).
+## Technologies Used
+
+- Angular Framework
+- Server-side Pagination Module
+- Skeleton Loader for Angular
+
+## How to Run
+
+1. Clone this repository to your local machine.
+2. Install the required dependencies by running `npm install`.
+3. Run the development server using `ng serve`.
+4. Navigate to http://localhost:4200/ to view the application.
+
+## Testing
+
+Run the following commands to execute unit tests:
+
+```bash
+ng test --include='**/data.service.spec.ts'
+ng test --include='**/api.service.spec.ts'
+ng test --include='**/navbar.component.spec.ts'
+ng test --include='**/user-bio.component.spec.ts'
+ng test --include='**/user-repos.component.spec.ts'

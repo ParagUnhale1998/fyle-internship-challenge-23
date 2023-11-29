@@ -1,0 +1,65 @@
+:host{
+    font-family: -webkit-body;
+}
+
+.loading-skeleton {
+    animation: loadingAnimation 1.5s infinite;
+  }
+  
+  .logo-skeleton {
+    width: 100px;
+    height: 24px;
+    background-color: #333;
+    border-radius: 4px;
+  }
+  
+  .search-skeleton {
+    width: 200px;
+    height: 24px;
+    background-color: #333;
+    border-radius: 4px;
+  }
+  
+  .search-button-skeleton {
+    width: 80px;
+    height: 24px;
+    background-color: #333;
+    border-radius: 4px;
+  }
+  
+  .avatar-skeleton {
+    width: 32px;
+    height: 32px;
+    background-color: #333;
+    border-radius: 50%;
+  }
+  .avatar-skeleton2{
+    width: 32px;
+    height: 32px;
+    background-color: #1F2937;
+
+    border-radius: 50%;
+  }
+  .name-skeleton {
+    width: 100px;
+    height: 16px;
+    background-color: #333;
+    border-radius: 4px;
+  }
+  .name-skeleton2{
+    width: 100px;
+    height: 16px;
+    background-color: #1F2937;
+    border-radius: 4px;
+  }
+  @keyframes loadingAnimation {
+    0% {
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0.7;
+    }
+  }

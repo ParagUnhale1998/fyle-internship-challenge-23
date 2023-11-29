@@ -1,0 +1,69 @@
+<!-- nav-loading-skeleton.component.html -->
+
+<nav class="bg-gray-500 p-4 border-b border-white border-opacity-25 loading-skeleton">
+    <div class="container mx-auto flex items-center justify-between ">
+        <div class="text-white text-xl font-semibold logo-skeleton"></div>
+
+        <div class="flex items-center">
+            <div class="px-2 py-1 border border-gray-600 rounded-md focus:outline-none focus:border-blue-400 search-skeleton"></div>
+            <div class="ml-2 bg-gray-700 text-white px-4 py-1 rounded-md search-button-skeleton"></div>
+        </div>
+
+        <div class="flex items-center lg:ml-2">
+            <div class="w-8 h-8 rounded-full avatar-skeleton"></div>
+            <div class="ml-2 lg:block hidden">
+                <div class="text-white font-semibold name-skeleton"></div>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- user-profile-loading-skeleton.component.html -->
+
+<div class="bg-gray-400 shadow-md border-blue-400 border-b border-white border-opacity-25 loading-skeleton">
+    <div class="container mx-auto py-8">
+        <div class="flex flex-col ml-5 gap-5 items-center sm:flex-col md:flex-row lg:flex-row">
+            <!-- Left side: Profile Image -->
+            <div class="flex-shrink-0 avatar-skeleton"></div>
+
+            <!-- Right side: User Information -->
+            <div class="ml-4 gap-5">
+                <!-- Name -->
+                <div class="text-xl font-semibold text-white name-skeleton"></div>
+
+                <!-- Username -->
+                <p class="text-gray-500 username-skeleton"></p>
+
+                <!-- Bio -->
+                <p class="text-gray-300 mt-2 bio-skeleton"></p>
+
+                <!-- Location -->
+                <p class="text-gray-300 mt-1 location-skeleton"></p>
+
+                <!-- Twitter Link -->
+                <div class="text-blue-300 hover:underline mt-1 twitter-link-skeleton"></div>
+
+                <div class="text-blue-300 hover:underline mt-1 portfolio-link-skeleton"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- repository-list-loading-skeleton.component.html -->
+
+<div class="bg-gray-600 shadow-md loading-skeleton">
+    <div class="container mx-auto p-8">
+        <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div *ngFor="let _ of [].constructor(9)" class="bg-gray-800 p-6 rounded-md shadow-md border relative">
+                <div class="text-xl font-semibold text-blue-500 mb-4 text-capital name-skeleton"></div>
+                <div class="absolute bottom-0 right-0 border rounded p-1 mr-2 mb-2 bg-gray-500 text-white private-skeleton">
+                  
+                </div>
+                <p class="text-white mb-4 description-skeleton"></p>
+                <div class="flex items-center">
+                    <span class="text-gray-500 language-skeleton"></span>
+                    <span class="text-white ml-2 language-value-skeleton"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

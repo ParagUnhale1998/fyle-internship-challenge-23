@@ -1,0 +1,53 @@
+<nav class="bg-gray-500 p-4 border-b border-white border-opacity-25 loading-skeleton" *ngIf="isLoading; else dataContent">
+    <div class="container mx-auto flex items-center justify-between ">
+        <div class="text-white text-xl font-semibold logo-skeleton"></div>
+
+        <div class="flex items-center">
+            <div class="px-2 py-1 border border-gray-600 rounded-md focus:outline-none focus:border-blue-400 search-skeleton"></div>
+            <div class="ml-2 bg-gray-700 text-white px-4 py-1 rounded-md search-button-skeleton"></div>
+        </div>
+
+        <div class="flex items-center lg:ml-2"   >
+            <div class="w-8 h-8 rounded-full avatar-skeleton" ></div>
+            <div class="ml-2 lg:block hidden">
+                <div class="text-white font-semibold name-skeleton"></div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<ng-template #dataContent>
+
+<nav class="bg-gray-800 p-4 border-b border-white border-opacity-25">
+    <div class="container mx-auto flex items-center justify-between ">
+      <a href="#" class="text-white text-xl font-semibold" >
+        <svg  class="w-6 h-6 inline mr-2 md:inline hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        GitHub
+      </a>
+        <div class="flex items-center">
+        <input
+        [(ngModel)]="searchedUsername"
+          type="text"
+          placeholder="Type Github Username" 
+          class="px-2 py-1 border border-gray-600 rounded-md focus:outline-none focus:border-blue-400"
+        />
+        <button class="ml-2 bg-gray-700 text-white px-4 py-1 rounded-md"   (click)="onSearch()">Search</button>
+      </div>
+        <div class="flex items-center lg:ml-2">
+        <img *ngIf="userdata?.avatar_url"
+          [src]="userdata.avatar_url"
+          alt="User Avatar"
+          class="w-8 h-8 rounded-full "
+        />
+        <div class="w-8 h-8 rounded-full avatar-skeleton2" *ngIf="!userdata || !userdata?.avatar_url "></div>
+
+        <div class="ml-2 lg:block hidden" *ngIf="userdata?.name">
+          <div class="text-white font-semibold">{{userdata.name}}</div>
+        </div>
+        <div class="ml-2 lg:block hidden" *ngIf="!userdata || !userdata?.name ">
+          <div class="text-white font-semibold name-skeleton2"></div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</ng-template>

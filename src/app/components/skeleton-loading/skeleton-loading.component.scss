@@ -1,0 +1,168 @@
+/* nav-loading-skeleton.component.css */
+
+.loading-skeleton {
+  animation: loadingAnimation 1.5s infinite;
+}
+
+.logo-skeleton {
+  width: 100px;
+  height: 24px;
+  background-color: #333;
+  border-radius: 4px;
+}
+
+.search-skeleton {
+  width: 200px;
+  height: 24px;
+  background-color: #333;
+  border-radius: 4px;
+}
+
+.search-button-skeleton {
+  width: 80px;
+  height: 24px;
+  background-color: #333;
+  border-radius: 4px;
+}
+
+.avatar-skeleton {
+  width: 32px;
+  height: 32px;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+.name-skeleton {
+  width: 100px;
+  height: 16px;
+  background-color: #333;
+  border-radius: 4px;
+}
+
+@keyframes loadingAnimation {
+  0% {
+      opacity: 0.7;
+  }
+  50% {
+      opacity: 0.5;
+  }
+  100% {
+      opacity: 0.7;
+  }
+}
+
+
+/* user-profile-loading-skeleton.component.css */
+
+.loading-skeleton {
+  animation: loadingAnimation 1.5s infinite;
+}
+
+.avatar-skeleton {
+  width: 60px;
+  height: 60px;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+.name-skeleton {
+  width: 150px;
+  height: 24px;
+  background-color: #333;
+  border-radius: 4px;
+}
+
+.username-skeleton {
+  width: 120px;
+  height: 16px;
+  background-color: #333;
+  border-radius: 4px;
+}
+
+.bio-skeleton {
+  width: 200px;
+  height: 16px;
+  background-color: #333;
+  border-radius: 4px;
+}
+
+.location-skeleton {
+  width: 100px;
+  height: 16px;
+  background-color: #333;
+  border-radius: 4px;
+}
+
+.twitter-link-skeleton,
+.portfolio-link-skeleton {
+  width: 120px;
+  height: 16px;
+  background-color: #333;
+  border-radius: 4px;
+}
+
+@keyframes loadingAnimation {
+  0% {
+      opacity: 0.7;
+  }
+  50% {
+      opacity: 0.5;
+  }
+  100% {
+      opacity: 0.7;
+  }
+}
+
+
+/* repository-list-loading-skeleton.component.css */
+
+.loading-skeleton {
+  animation: loadingAnimation 1.5s infinite;
+}
+
+.name-skeleton {
+  width: 80%;
+  height: 24px;
+  background-color: #333;
+  border-radius: 4px;
+}
+
+.private-skeleton {
+  width: 40px;
+  height: 16px;
+  background-color: #333;
+  border-radius: 4px;
+}
+
+.description-skeleton {
+  width: 90%;
+  height: 16px;
+  background-color: #333;
+  border-radius: 4px;
+}
+
+.language-skeleton {
+  width: 60px;
+  height: 16px;
+  background-color: #333;
+  border-radius: 4px;
+}
+
+.language-value-skeleton {
+  width: 30px;
+  height: 16px;
+  background-color: #333;
+  border-radius: 4px;
+}
+
+@keyframes loadingAnimation {
+  0% {
+      opacity: 0.7;
+  }
+  50% {
+      opacity: 0.5;
+  }
+  100% {
+      opacity: 0.7;
+  }
+}
