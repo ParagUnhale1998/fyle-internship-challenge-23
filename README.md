@@ -9,7 +9,7 @@ This repository contains the completed Fyle Frontend Challenge. The goal of the 
 1. **Topics Representation:**
    - The provided image illustrates the representation of topics for a particular repository. Each repository can have multiple topics.
 
-   ![Topics Representation](./assets/Thumbnail.png)
+   ![Topics Representation](https://github.com/ParagUnhale1998/fyle-internship-challenge-23/blob/master/src/assets/Thumbnail2.png)
 
 2. **Server-side Pagination:**
    - Pagination is implemented on the server side.
